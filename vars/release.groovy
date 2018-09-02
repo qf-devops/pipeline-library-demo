@@ -10,7 +10,7 @@ def call(String name = 'human') {
                      file: '/home/vagrant/jenkins/workspace/test-artifact/target/simple-maven-project-with-tests-1.0-SNAPSHOT.jar',
                      type: 'jar'
                    ]],
-                   credentialsId: '',
+                   credentialsId: 'spring-user',
                    groupId: 'test',
                    nexusUrl: '192.168.33.30:8081/nexus',
                    nexusVersion: 'nexus2',
