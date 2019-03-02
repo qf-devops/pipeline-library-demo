@@ -1,21 +1,20 @@
 #!/usr/bin/env groovy
 
 def call(String name = 'human') {
-  echo "Hello, ${name}."
-  echo "Hello, ${name}."
+  
   nexusArtifactUploader(
                    artifacts: [[
-                     artifactId: 'simple-maven-project-with-tests',
+                     artifactId: 'spring-app',
                      classifier: '',
-                     file: '/home/vagrant/jenkins/workspace/test-artifact/target/simple-maven-project-with-tests-1.0-SNAPSHOT.jar',
+                     file: 'spring-app-1.0-SNAPSHOT.jar',
                      type: 'jar'
                    ]],
-                   credentialsId: 'spring-user',
-                   groupId: 'test',
-                   nexusUrl: '192.168.33.30:8081/nexus',
+                   credentialsId: 'admin',
+                   groupId: 'com.quickfix.app',
+                   nexusUrl: 'http://ec2-18-191-250-128.us-east-2.compute.amazonaws.com:8081/artifactory',
                    nexusVersion: 'nexus2',
                    protocol: 'http',
-                   repository: 'spring-snapshots',
+                   repository: 'snapshots',
                    version: '1.0-SNAPSHOT'
                    ) 
 }
