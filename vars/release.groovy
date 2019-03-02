@@ -14,7 +14,7 @@ def call(String name = 'human') {
                    nexusUrl: 'ec2-18-191-250-128.us-east-2.compute.amazonaws.com:8081/artifactory',
                    nexusVersion: 'nexus2',
                    protocol: 'http',
-                   repository: 'libs-snapshot',
+                   repository: 'ip-172-31-19-164-snapshots',
                    version: '1.0-SNAPSHOT'
                    ) 
 }
