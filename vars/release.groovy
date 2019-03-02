@@ -6,7 +6,7 @@ def call(String name = 'human') {
                    artifacts: [[
                      artifactId: 'spring-app',
                      classifier: '',
-                     file: 'target/spring-app-1.0-SNAPSHOT.jar',
+                     file: '/home/ubuntu/jenkins-agent/workspace/test_pipeline/target/spring-app-1.0-SNAPSHOT.jar',
                      type: 'jar'
                    ]],
                    credentialsId: 'admin',
