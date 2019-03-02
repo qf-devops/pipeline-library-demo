@@ -9,7 +9,7 @@ def call(String name = 'human') {
                      file: '/home/ubuntu/jenkins-agent/workspace/test_pipeline/target/spring-app-1.0-SNAPSHOT.jar',
                      type: 'jar'
                    ]],
-                   credentialsId: 'admin',
+                   credentialsId: 'jfrog',
                    groupId: 'com.quickfix.app',
                    nexusUrl: 'http://ec2-18-191-250-128.us-east-2.compute.amazonaws.com:8081/artifactory',
                    nexusVersion: 'nexus2',
