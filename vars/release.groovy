@@ -11,7 +11,7 @@ def call(String name = 'human') {
                    ]],
                    credentialsId: 'jfrog',
                    groupId: 'com.quickfix.app',
-                   nexusUrl: 'http://ec2-18-191-250-128.us-east-2.compute.amazonaws.com:8081/artifactory',
+                   nexusUrl: 'ec2-18-191-250-128.us-east-2.compute.amazonaws.com:8081/artifactory',
                    nexusVersion: 'nexus2',
                    protocol: 'http',
                    repository: 'snapshots',
