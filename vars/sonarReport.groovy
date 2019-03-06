@@ -2,6 +2,6 @@
 
 def call(){
 
- mvn sonar:sonar
+sonar-runner -f sonar-runner.properties
 
 }
